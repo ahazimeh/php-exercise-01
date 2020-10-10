@@ -14,4 +14,5 @@ $array = Array (
         }
     $i++;
     }
+    ksort($array);
 ?>
