@@ -50,7 +50,7 @@ body{
 <input class="form-control" type="password" id="password" name = "password" required>
 </div>
 <?php
-if(strlen($_POST["password"])<6){
+if(strlen($_POST["password"])<6 && isset($_POST["password"])){
     echo "<p class='password'>Password should at least consists of 6 characters</p>";
 }
 
