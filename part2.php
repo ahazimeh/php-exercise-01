@@ -11,21 +11,26 @@ body{
 }
 .yearly{
     float:left;
+
 }
 .monthly{
     float:left;
+    margin-left:10px;
 }
 
 </style>
 </head>
 <body>
 <form action="part2.php" method="post">
-<input type ="number" name = "salary" class="form-control" required>
+    <label for="salary">Salary</label>
+<input type ="number" id="salary" name = "salary" class="form-control" required>
 <label for="yearly">Yearly</label>
 <input id="yearly" type="radio"name = "type"value="yearly" checked>
 <label for="monthly">Monthly</label>
 <input id="monthly" type="radio"name = "type" value="monthly" >
-<input type ="number" name = "tax-free" class="form-control">
+<br>
+<label for="tax-free">Tax Free</label>
+<input type ="number" id="tax-free" name = "tax-free" class="form-control" placeholder="optional">
 <input type="submit" class="btn btn-primary">
 </form>
 <?php
