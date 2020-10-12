@@ -36,7 +36,7 @@ if($_POST["type"]=="monthly"){
 }
 if($salary < 10000 && isset($_POST["salary"])){
     $salarywithfree = $salary + $free;
-    $salarywithfreemonth = $salarywithfree/12;
+    $salarywithfreemonth = round($salarywithfree*100/12)/100;
 
     echo "<div class='yearly'>";
     echo "Yearly<br>";
