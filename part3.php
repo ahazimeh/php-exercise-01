@@ -1,5 +1,6 @@
 <?php
 function palindrom($string){
+    $string = strtolower($string);
     for($i=0;$i<strlen($string)>>1;$i++){
         // $string[i]='a';
         if($string[i]!=$string[strlen($string)-i-1]){
@@ -10,7 +11,7 @@ function palindrom($string){
     return true;
 }
 
-$x = palindrom("anana");
+$x = palindrom("Anana");
 if($x == true)
 echo "true";
 else
